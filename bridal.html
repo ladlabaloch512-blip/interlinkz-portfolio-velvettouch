@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bridal and Party Packages - Velvet Touch Salon and Spa</title>
+<meta name="description" content="Velvet Touch Salon and Spa demo website. Hair, skin, nails and spa treatments with online booking, plus a small salon shop.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo-mark.png" alt="Velvet Touch Salon and Spa lotus logo">
+      <span class="brand-text"><span class="brand-name">Velvet Touch</span><span class="brand-sub">Salon and Spa</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services and Prices</a></li>
+<li><a href="book.html">Book Appointment</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="bridal.html" class="active">Bridal Packages</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="cart.html">Cart<span class="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+
+<div class="page-head"><div class="wrap">
+  <h1>Bridal and Party Packages</h1>
+  <p>Your day, beautifully handled. Bridal packages include a full trial session before the day, so there is nothing to worry about when it matters. Tell us your date early, wedding season weekends fill fast.</p>
+</div></div>
+<div class="wrap">
+  <div class="grid grid-3" id="packageGrid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))"></div>
+
+  <section class="section" style="padding-bottom:0">
+    <div class="about-grid">
+      <img src="assets/img/bridal.jpg" alt="Bridal preparation at Velvet Touch Salon and Spa">
+      <div>
+        <h2>About the trial session</h2>
+        <p>Every Bridal Signature Package starts with a trial session before the day. We try the full makeup look and hairstyle, adjust them with you, and note everything down, so the day itself is calm and unhurried.</p>
+        <p>Bridal packages take a small booking amount to hold your date, which we explain fully before you confirm anything. Party Makeup needs no trial and can be booked like any other appointment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title" id="bridalFormTitle">Ask about your date</h2>
+    <p class="section-sub">Tell us the package you are interested in and your date, and we will reply with availability and the next steps.</p>
+    <div style="max-width:720px;margin:0 auto">
+      <div class="form-success" id="bridalSuccess" role="status"></div>
+      <form class="form-card" id="bridalForm" novalidate>
+        <div class="form-error" id="bridalError" role="alert"></div>
+        <div class="form-grid">
+          <div class="field">
+            <label for="brName">Your name</label>
+            <input type="text" id="brName" data-label="your name" required>
+          </div>
+          <div class="field">
+            <label for="brPhone">Phone number</label>
+            <input type="tel" id="brPhone" data-label="your phone number" required>
+          </div>
+        </div>
+        <div class="form-grid">
+          <div class="field">
+            <label for="brPackage">Package</label>
+            <select id="brPackage" data-label="a package" required>
+              <option value="">Choose a package</option>
+              <option value="Bridal Signature Package">Bridal Signature Package</option>
+              <option value="Party Makeup">Party Makeup</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="brDate">Your event date</label>
+            <input type="date" id="brDate" data-label="your event date" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="brMsg">Anything we should know? (optional)</label>
+          <textarea id="brMsg" rows="3" placeholder="Venue, number of people, the look you have in mind"></textarea>
+        </div>
+        <button class="btn btn-block" type="submit">Send Enquiry</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+</main>
+<div class="lead-band">
+  <div class="wrap lead-in">
+    <p>This demo website was designed and built by Interlinkz as a portfolio piece. Like the look of it?</p>
+    <a class="btn" href="https://interlinkz.com/contact">Want a website like this? Talk to Interlinkz</a>
+    <a class="lead-contact" href="https://interlinkz.com/contact">Contact Interlinkz</a>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/img/logo-mark.png" alt="Velvet Touch Salon and Spa lotus logo">
+          <div>
+            <h3>Velvet Touch Salon and Spa</h3>
+            <p>Hair, skin, nails and spa treatments in a quiet, unhurried space, plus the same professional products our stylists use, to take home.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul class="footer-links">
+          <li><a href="services.html">Services and Prices</a></li>
+          <li><a href="book.html">Book Appointment</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="bridal.html">Bridal Packages</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>9 Demo Plaza, Sample City<br>
+        Phone: 0300 0000000<br>
+        Email: hello@velvettouch.example.com</p>
+        <p>Monday to Saturday: 10 am to 9 pm<br>Sunday: 12 pm to 8 pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Velvet Touch Salon and Spa is a demo portfolio website. All treatments, prices and details are sample content for design display only.</span>
+      <span>Built by <a href="https://interlinkz.com">Interlinkz</a></span>
+    </div>
+  </div>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
